@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Proyectocasifull"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_calc_panels"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_inicio"
+            android:exported="true" />
+        <activity
             android:name=".activity_inicioseci"
             android:exported="false" />
         <activity
