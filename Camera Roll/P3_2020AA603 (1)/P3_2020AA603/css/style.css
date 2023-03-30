@@ -1,0 +1,30 @@
+*{
+    font-family: 'Andika', sans-serif;
+}
+.foto1{
+    position: relative;
+    top: 60px;
+}
+
+.yutu{
+    margin-left: 40%;
+
+}
+.textmm{
+    margin-left: 45%;
+}
+.h1,h2,h3,h5,h6{
+    font-family: 'Andika', sans-serif;
+}
+
+
+.container h6{
+    font-weight: bold;
+}
+.incomp{
+    font-size: 50px;
+}
+
+.incomps{
+    font-size: 30px;
+}
