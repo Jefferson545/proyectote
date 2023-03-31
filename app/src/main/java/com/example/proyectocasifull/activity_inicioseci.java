@@ -60,7 +60,7 @@ public class activity_inicioseci extends AppCompatActivity {
                     //Registrar usuario
                     //Exitoso -> Mostrar toast
                     //redireccionar - intent a login
-                    Intent intent = new Intent(activity_inicioseci.this, MainActivity.class);
+                    Intent intent = new Intent(activity_inicioseci.this, Activity_inicio.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     //ocultar progressBar
