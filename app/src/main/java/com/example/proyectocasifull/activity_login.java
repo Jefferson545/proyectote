@@ -99,14 +99,15 @@ public class activity_login extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Intent i=new Intent(activity_login.this,activity_inicioseci.class);
-                                startActivity(i);
+
 
                                 AlertDialog.Builder builder = new AlertDialog.Builder(activity_login.this);
-                                builder.setMessage("Se ha iniciado sesión correctamente.");
+                                builder.setMessage("Se ha Registrado correctamente correctamente.");
                                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
                                         // Cierra el cuadro de diálogo
+                                        Intent i=new Intent(activity_login.this,Activity_inicio.class);
+                                        startActivity(i);
                                         dialog.dismiss();
                                     }
                                 });
