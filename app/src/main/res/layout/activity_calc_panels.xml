@@ -18,6 +18,7 @@
             android:text="El panel solar que te recomendamos para tu hogar es:"
             android:textSize="16sp"
             android:textStyle="bold"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,22 +29,24 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:onClick="click"
-            android:text="ewqwqe"
+            android:text=""
             android:textColor="@android:color/darker_gray"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintBottom_toTopOf="@+id/textViewVerMas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="309dp"
-            android:layout_height="63dp"
+            android:id="@+id/textViewVerMas"
+            android:layout_width="312dp"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:text="Si no te estas de acuerdo con el tipo de panel que te recomendamos, aquí te presentamos otras "
+            android:text="Otras opciones disponibles"
+            android:textColor="@color/material_dynamic_primary60"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:onClick="metodo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/primerPanel" />
@@ -59,7 +62,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerMas" />
 
         <TextView
             android:id="@+id/tercerPanel"
