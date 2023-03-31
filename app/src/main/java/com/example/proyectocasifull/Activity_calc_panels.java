@@ -87,7 +87,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
     }
     public String panel1(){
-        String info = "panel: (144<360 Kwh)\n" +
+        String info = "panel: (144<360 Kwh)\n\n" +
                 "El panel solar que te recomendamos para tu hogar es:\n" +
                 "KIT 144KWH SISTEMA FOTOVOLTAICO EN RED\n" +
                 "Precio: $1999.99\n" +
@@ -98,11 +98,11 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Incluye 5 años garantía\n" +
                 "• Incluye instalación básica\n" +
                 "• Rieles y accesorios para montaje de techo con anclas\n" +
-                "• Documentación cambio medidor";
+                "• Documentación cambio medidor\n";
         return info;
     }
     public String panel2(){
-        String info="(360<720 kwh)\n"+
+        String info="(360<720 kwh)\n\n"+
 
                 "KIT 360KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $3637.99\n"+
@@ -112,7 +112,7 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Inversor Solar 2000 Watts\n "+
                 "• Incluye 5 años garantía\n"+
                 "• Incluye instalación básica\n"+
-                "• Rieles y accesorios para montaje de techo con anclas";
+                "• Rieles y accesorios para montaje de techo con anclas\n";
         return info;
     }
     public String panel3(){
@@ -126,11 +126,11 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Inversor Solar 3600 Watts\n "+
                 "• Incluye 5 años garantía\n"+
                 "• Incluye instalación básica\n"+
-                "• Rieles y accesorios para montaje de techo con anclas";
+                "• Rieles y accesorios para montaje de techo con anclas\n";
         return info;
     }
     public String panel4(){
-        String info="(1152<2304 kwh)\n\n\n"+
+        String info="(1152<2304 kwh)\n\n"+
 
                 "KIT 1152KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $11,113.99\n\n"+
@@ -140,11 +140,11 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Inversor Solar 6000 Watts\n "+
                 "• Incluye 5 años garantía\n"+
                 "• Incluye instalación básica\n"+
-                "• Rieles y accesorios para montaje de techo con anclas";
+                "• Rieles y accesorios para montaje de techo con anclas\n";
         return info;
     }
     public String panel5(){
-        String info ="(2304<infinito)\n\n\n\n"+
+        String info ="(2304<infinito)\n\n"+
                 "KIT 2304KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $23,439.99\n\n"+
                 "Detalles:\n"+
@@ -153,7 +153,7 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Inversor Solar 3600 Watts\n "+
                 "• Incluye 5 años garantía\n"+
                 "• Incluye instalación básica\n"+
-                "• Rieles y accesorios para montaje de techo con anclas";
+                "• Rieles y accesorios para montaje de techo con anclasn\n4";
         return info;
     }
 
