@@ -7,63 +7,57 @@
     android:background="@drawable/fondo"
     tools:context=".activity_inicioseci">
 
-    <EditText
-        android:id="@+id/Correo"
-        android:layout_width="357dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="27dp"
-        android:ems="10"
-        android:hint="Correo Electronico:"
-        android:inputType="textPersonName"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="118dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sinfondo" />
 
     <EditText
         android:id="@+id/contra"
         android:layout_width="357dp"
         android:layout_height="53dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="308dp"
-        android:layout_marginEnd="27dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Contraseña:"
         android:inputType="textPassword"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Correo" />
 
     <Button
         android:id="@+id/btn_iniciar"
-        android:layout_width="351dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="292dp"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
         android:text="Iniciar Sesión"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="118dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="147dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sinfondo" />
+        app:layout_constraintTop_toBottomOf="@+id/contra"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Correo"
+        android:layout_width="357dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Correo Electronico:"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
