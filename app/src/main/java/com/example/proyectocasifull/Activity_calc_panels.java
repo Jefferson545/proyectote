@@ -361,19 +361,19 @@ public class Activity_calc_panels extends AppCompatActivity {
                 public void onClick(View v) {
                     if (mostrarPaneles) {
                         //mostrar img de los paneles
-                        ImageView img1=(ImageView)findViewById(R.id.imgpanel1);
+                        ImageView img1=(ImageView)findViewById(R.id.imgpanel2);
                         img1.setVisibility(View.VISIBLE);
                         ImageView imageView = findViewById(R.id.imgpanel2);
                         imageView.setImageResource(R.drawable.panel1);
-                        ImageView img2=(ImageView)findViewById(R.id.imgpanel2);
+                        ImageView img2=(ImageView)findViewById(R.id.imgpanel3);
                         img2.setVisibility(View.VISIBLE);
                         ImageView imageView3 = findViewById(R.id.imgpanel3);
                         imageView3.setImageResource(R.drawable.panel2);
-                        ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
+                        ImageView img3=(ImageView)findViewById(R.id.imgpanel4);
                         img3.setVisibility(View.VISIBLE);
                         ImageView imageView4 = findViewById(R.id.imgpanel4);
                         imageView4.setImageResource(R.drawable.panel3);
-                        ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
+                        ImageView img4=(ImageView)findViewById(R.id.imgpanel5);
                         img4.setVisibility(View.VISIBLE);
                         ImageView imageView5 = findViewById(R.id.imgpanel5);
                         imageView5.setImageResource(R.drawable.panel4);
