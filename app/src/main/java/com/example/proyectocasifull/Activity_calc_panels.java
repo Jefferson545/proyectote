@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,8 +31,7 @@ public class Activity_calc_panels extends AppCompatActivity {
         double calcular = (info+info2+info3)/3;
 
         if (calcular<=360){
-
-
+            mostrarImagen1();
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
             pnel1.setText("Panel 1: "+panel1());
             verm.setOnClickListener(new View.OnClickListener() {
@@ -39,18 +39,34 @@ public class Activity_calc_panels extends AppCompatActivity {
                 public void onClick(View v) {
                     if (mostrarPaneles) {
                         // mostrar los paneles
+
                         TextView pnel2 = (TextView)findViewById(R.id.segundoPanel);
                         pnel2.setVisibility(View.VISIBLE);
+                        ImageView img2=(ImageView)findViewById(R.id.imgpanel2);
+                        img2.setVisibility(View.VISIBLE);
+                        mostrarImagen2();
                         pnel2.setText("Panel 2: "+panel2());
+
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
                         pnel3.setText("Panel 3: "+panel3());
+                        ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
+                        img3.setVisibility(View.VISIBLE);
+                        mostrarImagen3();
+
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
                         pnel4.setText("Panel 4: "+panel4());
+                        ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
+                        img4.setVisibility(View.VISIBLE);
+                        mostrarImagen4();
+
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
                         pnel5.setText("Panel 5: "+panel5());
+                        ImageView img5=(ImageView)findViewById(R.id.imgpanel5);
+                        img5.setVisibility(View.VISIBLE);
+                        mostrarImagen5();
 
                         // cambiar el texto del botón
                         verm.setText("Ocultar opciones");
@@ -61,12 +77,20 @@ public class Activity_calc_panels extends AppCompatActivity {
                         // ocultar los paneles
                         TextView pnel2 = (TextView)findViewById(R.id.segundoPanel);
                         pnel2.setVisibility(View.GONE);
+                        ImageView img2=(ImageView)findViewById(R.id.imgpanel2);
+                        img2.setVisibility(View.GONE);
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.GONE);
+                        ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
+                        img3.setVisibility(View.GONE);
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.GONE);
+                        ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
+                        img4.setVisibility(View.GONE);
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.GONE);
+                        ImageView img5=(ImageView)findViewById(R.id.imgpanel5);
+                        img5.setVisibility(View.GONE);
 
                         // cambiar el texto del botón
                         verm.setText("Ver más opciones");
@@ -340,8 +364,31 @@ public class Activity_calc_panels extends AppCompatActivity {
                 "• Inversor Solar 3600 Watts\n "+
                 "• Incluye 5 años garantía\n"+
                 "• Incluye instalación básica\n"+
-                "• Rieles y accesorios para montaje de techo con anclasn\n4";
+                "• Rieles y accesorios para montaje de techo con anclasn\n";
         return info;
     }
+    public void mostrarImagen1() {
+
+        ImageView imageView = findViewById(R.id.imgpanel1); // Obtener la referencia al ImageView del diseño XML
+        imageView.setImageResource(R.drawable.panel1); // Asignar la imagen al ImageView
+    }
+    public void mostrarImagen2() {
+
+        ImageView imageView = findViewById(R.id.imgpanel2); // Obtener la referencia al ImageView del diseño XML
+        imageView.setImageResource(R.drawable.panel2); // Asignar la imagen al ImageView
+    }
+    public void mostrarImagen3() {
+        ImageView imageView = findViewById(R.id.imgpanel3); // Obtener la referencia al ImageView del diseño XML
+        imageView.setImageResource(R.drawable.panel3); // Asignar la imagen al ImageView
+    }
+    public void mostrarImagen4() {
+        ImageView imageView = findViewById(R.id.imgpanel4); // Obtener la referencia al ImageView del diseño XML
+        imageView.setImageResource(R.drawable.panel4); // Asignar la imagen al ImageView
+    }
+    public void mostrarImagen5() {
+        ImageView imageView = findViewById(R.id.imgpanel5); // Obtener la referencia al ImageView del diseño XML
+        imageView.setImageResource(R.drawable.panel5); // Asignar la imagen al ImageView
+    }
+
 
 }
