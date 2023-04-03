@@ -3,6 +3,7 @@ package com.example.proyectocasifull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -532,6 +533,18 @@ public class Activity_calc_panels extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imgpanel5); // Obtener la referencia al ImageView del diseño XML
         imageView.setImageResource(R.drawable.panel5); // Asignar la imagen al ImageView
     }*/
+
+    public void enviarInformacion(View view) {
+        // Obtener el texto del TextView
+        TextView textView = (TextView) findViewById(R.id.primerPanel);
+        String informacion = textView.getText().toString();
+
+        // Crear un Intent para pasar la información a la siguiente actividad
+        Intent intent = new Intent(this, Activity_compra.class);
+        intent.putExtra("textSeleccionado", informacion);
+        startActivity(intent);
+    }
+
 
 
 }
