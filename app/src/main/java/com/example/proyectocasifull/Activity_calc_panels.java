@@ -397,14 +397,15 @@ public class Activity_calc_panels extends AppCompatActivity {
                         // actualizar el estado de la variable
                         mostrarPaneles = false;
                     } else {
+
                         //ocultar imagenes
-                        ImageView img1=(ImageView)findViewById(R.id.imgpanel1);
+                        ImageView img1=(ImageView)findViewById(R.id.imgpanel2);
                         img1.setVisibility(View.GONE);
-                        ImageView img2=(ImageView)findViewById(R.id.imgpanel2);
+                        ImageView img2=(ImageView)findViewById(R.id.imgpanel3);
                         img2.setVisibility(View.GONE);
-                        ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
+                        ImageView img3=(ImageView)findViewById(R.id.imgpanel4);
                         img3.setVisibility(View.GONE);
-                        ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
+                        ImageView img4=(ImageView)findViewById(R.id.imgpanel5);
                         img4.setVisibility(View.GONE);
                         // ocultar los paneles
                         TextView pnel2 = (TextView)findViewById(R.id.segundoPanel);

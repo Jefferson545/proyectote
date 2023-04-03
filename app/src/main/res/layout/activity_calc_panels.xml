@@ -21,7 +21,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/segundoPanel"
+            app:layout_constraintTop_toBottomOf="@+id/tercerPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/primerPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -56,20 +56,20 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgpanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textViewVerMas"
             android:layout_width="311dp"
             android:layout_height="48dp"
-            android:text="Otras opciones disponibles"
+            android:layout_marginTop="20dp"
+            android:text="Ver más opciones"
             android:textColor="#FF6200EE"
-
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/primerPanel" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel1" />
 
         <TextView
             android:id="@+id/segundoPanel"
@@ -80,7 +80,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgpanel2" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerMas" />
 
         <TextView
             android:id="@+id/cuartoPanel"
@@ -91,7 +91,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgpanel4" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel3" />
 
         <TextView
             android:id="@+id/tercerPanel"
@@ -102,7 +102,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgpanel3" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel2" />
 
         <ImageView
             android:id="@+id/imgpanel2"
@@ -110,7 +110,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewVerMas"
+            app:layout_constraintTop_toBottomOf="@+id/segundoPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -122,7 +122,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgpanel5" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel4" />
 
         <ImageView
             android:id="@+id/imgpanel4"
@@ -130,7 +130,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tercerPanel"
+            app:layout_constraintTop_toBottomOf="@+id/cuartoPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
@@ -139,7 +139,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cuartoPanel"
+            app:layout_constraintTop_toBottomOf="@+id/quintoPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
 
