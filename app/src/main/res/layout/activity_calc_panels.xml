@@ -2,25 +2,48 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="87dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Activity_calc_panels">
+        tools:context=".Activity_calc_panels"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="87dp">
 
+
+        <ImageView
+            android:id="@+id/imgpanel3"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/segundoPanel"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="309dp"
             android:layout_height="53dp"
-            android:layout_marginTop="44dp"
             android:text="El panel solar que te recomendamos para tu hogar es:"
-            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgpanel1"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/primerPanel"
@@ -29,18 +52,16 @@
             android:clickable="true"
             android:onClick="click"
             android:text="ewqwqe"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewVerMas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel1" />
 
         <TextView
             android:id="@+id/textViewVerMas"
-            android:layout_width="309dp"
-            android:layout_height="63dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
             android:text="Otras opciones disponibles"
             android:textColor="#FF6200EE"
 
@@ -54,50 +75,72 @@
             android:id="@+id/segundoPanel"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
             android:onClick="click"
-            app:layout_constraintBottom_toTopOf="@+id/tercerPanel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.512"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewVerMas" />
-
-        <TextView
-            android:id="@+id/tercerPanel"
-            android:layout_width="312dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
-            android:onClick="click"
-            app:layout_constraintBottom_toTopOf="@+id/cuartoPanel"
+            android:text="segundo"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/segundoPanel" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel2" />
 
         <TextView
             android:id="@+id/cuartoPanel"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
             android:onClick="click"
-            app:layout_constraintBottom_toTopOf="@+id/quintoPanel"
+            android:text="cuarto"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tercerPanel" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel4" />
+
+        <TextView
+            android:id="@+id/tercerPanel"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="tercero"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel3" />
+
+        <ImageView
+            android:id="@+id/imgpanel2"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerMas"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/quintoPanel"
-            android:layout_width="309dp"
+            android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
             android:onClick="click"
+            android:text="quinto"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cuartoPanel" />
+            app:layout_constraintTop_toBottomOf="@+id/imgpanel5" />
 
+        <ImageView
+            android:id="@+id/imgpanel4"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tercerPanel"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imgpanel5"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cuartoPanel"
+            tools:srcCompat="@tools:sample/avatars" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
