@@ -40,7 +40,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.imgpanel1); // Obtener la referencia al ImageView del diseño XML
             imageView.setImageResource(R.drawable.panel1); // Asignar la imagen al ImageView
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
-            pnel1.setText("Panel 1: "+panel1());
+            pnel1.setText("\nPanel 1: "+panel1());
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -57,7 +57,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
-                        pnel3.setText("Panel 3: "+panel3());
+                        pnel3.setText("\nPanel 3: "+panel3());
                         ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
                         img3.setVisibility(View.VISIBLE);
                         ImageView imageView3 = findViewById(R.id.imgpanel3);
@@ -65,7 +65,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
-                        pnel4.setText("Panel 4: "+panel4());
+                        pnel4.setText("\nPanel 4: "+panel4());
                         ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
                         img4.setVisibility(View.VISIBLE);
                         ImageView imageView4 = findViewById(R.id.imgpanel4);
@@ -73,7 +73,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
-                        pnel5.setText("Panel 5: "+panel5());
+                        pnel5.setText("\nPanel 5: "+panel5());
                         ImageView img5=(ImageView)findViewById(R.id.imgpanel5);
                         img5.setVisibility(View.VISIBLE);
                         ImageView imageView5 = findViewById(R.id.imgpanel5);
@@ -119,7 +119,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel2);
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
-            pnel1.setText("Panel 1: "+panel2());
+            pnel1.setText("\nPanel 1: "+panel2());
 
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -149,13 +149,13 @@ public class Activity_calc_panels extends AppCompatActivity {
                         pnel2.setText("Panel 2: "+panel1());
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
-                        pnel3.setText("Panel 3: "+panel3());
+                        pnel3.setText("\nPanel 3: "+panel3());
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
-                        pnel4.setText("Panel 4: "+panel4());
+                        pnel4.setText("\nPanel 4: "+panel4());
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
-                        pnel5.setText("Panel 5: "+panel5());
+                        pnel5.setText("\nPanel 5: "+panel5());
 
 
                         // cambiar el texto del botón
@@ -196,7 +196,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
         } else if (calcular>720 && calcular<=1152) {
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
-            pnel1.setText("Panel 1: "+panel3());
+            pnel1.setText("\nPanel 1: "+panel3());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel3);
             verm.setOnClickListener(new View.OnClickListener() {
@@ -227,13 +227,13 @@ public class Activity_calc_panels extends AppCompatActivity {
                         pnel2.setText("Panel 2: "+panel1());
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
-                        pnel3.setText("Panel 3: "+panel2());
+                        pnel3.setText("\nPanel 3: "+panel2());
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
-                        pnel4.setText("Panel 4: "+panel4());
+                        pnel4.setText("\nPanel 4: "+panel4());
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
-                        pnel5.setText("Panel 5: "+panel5());
+                        pnel5.setText("\nPanel 5: "+panel5());
 
                         // cambiar el texto del botón
                         verm.setText("Ocultar opciones");
@@ -273,7 +273,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             
         } else if (calcular>1152 && calcular<=2304) {
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
-            pnel1.setText("Panel 1: "+panel4());
+            pnel1.setText("\nPanel 1: "+panel4());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel4);
             verm.setOnClickListener(new View.OnClickListener() {
@@ -303,13 +303,13 @@ public class Activity_calc_panels extends AppCompatActivity {
                         pnel2.setText("Panel 2: "+panel1());
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
-                        pnel3.setText("Panel 3: "+panel2());
+                        pnel3.setText("\nPanel 3: "+panel2());
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
-                        pnel4.setText("Panel 4: "+panel3());
+                        pnel4.setText("\nPanel 4: "+panel3());
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
-                        pnel5.setText("Panel 5: "+panel5());
+                        pnel5.setText("\nPanel 5: "+panel5());
 
                         // cambiar el texto del botón
                         verm.setText("Ocultar opciones");
@@ -348,7 +348,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             });
         } else if (calcular>2304) {
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
-            pnel1.setText("Panel 1: "+panel5());
+            pnel1.setText("\nPanel 1: "+panel5());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel5);
             verm.setOnClickListener(new View.OnClickListener() {
@@ -378,13 +378,13 @@ public class Activity_calc_panels extends AppCompatActivity {
                         pnel2.setText("Panel 2: "+panel1());
                         TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
                         pnel3.setVisibility(View.VISIBLE);
-                        pnel3.setText("Panel 3: "+panel2());
+                        pnel3.setText("\nPanel 3: "+panel2());
                         TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
                         pnel4.setVisibility(View.VISIBLE);
-                        pnel4.setText("Panel 4: "+panel3());
+                        pnel4.setText("\nPanel 4: "+panel3());
                         TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
                         pnel5.setVisibility(View.VISIBLE);
-                        pnel5.setText("Panel 5: "+panel4());
+                        pnel5.setText("\nPanel 5: "+panel4());
 
                         // cambiar el texto del botón
                         verm.setText("Ocultar opciones");
