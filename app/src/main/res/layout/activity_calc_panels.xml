@@ -22,6 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/segundoPanel"
+            android:onClick="enviarInformacion3"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -29,6 +30,7 @@
             android:layout_width="309dp"
             android:layout_height="53dp"
             android:text="El panel solar que te recomendamos para tu hogar es:"
+            android:onClick="enviarInformacion"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -42,6 +44,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:onClick="enviarInformacion"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:srcCompat="@tools:sample/avatars" />
 
@@ -75,7 +78,7 @@
             android:id="@+id/segundoPanel"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
-            android:onClick="enviarInformacion"
+            android:onClick="enviarInformacion2"
             android:text="segundo"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -86,7 +89,7 @@
             android:id="@+id/cuartoPanel"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:onClick="enviarInformacion"
+            android:onClick="enviarInformacion4"
             android:text="cuarto"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +100,7 @@
             android:id="@+id/tercerPanel"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:onClick="enviarInformacion"
+            android:onClick="enviarInformacion3"
             android:text="tercero"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -111,13 +114,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewVerMas"
+            android:onClick="enviarInformacion2"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/quintoPanel"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:onClick="enviarInformacion"
+            android:onClick="enviarInformacion5"
             android:text="quinto"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -130,6 +134,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:onClick="enviarInformacion4"
             app:layout_constraintTop_toBottomOf="@+id/tercerPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
@@ -139,6 +144,7 @@
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:onClick="enviarInformacion5"
             app:layout_constraintTop_toBottomOf="@+id/cuartoPanel"
             tools:srcCompat="@tools:sample/avatars" />
 
