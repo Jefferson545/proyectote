@@ -41,6 +41,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             imageView.setImageResource(R.drawable.panel1); // Asignar la imagen al ImageView
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
             pnel1.setText("\nPanel 1: "+panel1());
+            ocultarpaneles();
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -120,6 +121,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             imageView.setImageResource(R.drawable.panel2);
             TextView pnel1 = (TextView)findViewById(R.id.primerPanel);
             pnel1.setText("\nPanel 1: "+panel2());
+            ocultarpaneles();
 
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -199,6 +201,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             pnel1.setText("\nPanel 1: "+panel3());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel3);
+            ocultarpaneles();
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -276,6 +279,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             pnel1.setText("\nPanel 1: "+panel4());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel4);
+            ocultarpaneles();
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -351,6 +355,7 @@ public class Activity_calc_panels extends AppCompatActivity {
             pnel1.setText("\nPanel 1: "+panel5());
             ImageView imageView = findViewById(R.id.imgpanel1);
             imageView.setImageResource(R.drawable.panel5);
+            ocultarpaneles();
             verm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -426,7 +431,7 @@ public class Activity_calc_panels extends AppCompatActivity {
 
     }
     public String panel1(){
-        String info = "panel: (144<360 Kwh)\n\n" +
+        String info = "panel: (144 a 360 Kwh)\n\n" +
                 "El panel solar que te recomendamos para tu hogar es:\n" +
                 "KIT 144KWH SISTEMA FOTOVOLTAICO EN RED\n" +
                 "Precio: $1999.99\n" +
@@ -441,7 +446,7 @@ public class Activity_calc_panels extends AppCompatActivity {
         return info;
     }
     public String panel2(){
-        String info="(360<720 kwh)\n\n"+
+        String info="(360 a 720 kwh)\n\n"+
 
                 "KIT 360KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $3637.99\n"+
@@ -455,7 +460,7 @@ public class Activity_calc_panels extends AppCompatActivity {
         return info;
     }
     public String panel3(){
-        String info="(720<1152 kwh)\n\n"+
+        String info="(720 a 1152 kwh)\n\n"+
 
                 "KIT 720KWH SISTEMA FOTOVOLTIACO EN RED\n"+
                 "Precio: $6769.99\n"+
@@ -469,7 +474,7 @@ public class Activity_calc_panels extends AppCompatActivity {
         return info;
     }
     public String panel4(){
-        String info="(1152<2304 kwh)\n\n"+
+        String info="(1152 a 2304 kwh)\n\n"+
 
                 "KIT 1152KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $11,113.99\n\n"+
@@ -483,7 +488,7 @@ public class Activity_calc_panels extends AppCompatActivity {
         return info;
     }
     public String panel5(){
-        String info ="(2304<infinito)\n\n"+
+        String info ="(2304+)\n\n"+
                 "KIT 2304KWH SISTEMA FOTOVOLTAICO EN RED\n"+
                 "Precio: $23,439.99\n\n"+
                 "Detalles:\n"+
@@ -534,6 +539,24 @@ public class Activity_calc_panels extends AppCompatActivity {
         imageView.setImageResource(R.drawable.panel5); // Asignar la imagen al ImageView
     }*/
 
+    public void ocultarpaneles(){
+        TextView pnel2 = (TextView)findViewById(R.id.segundoPanel);
+        pnel2.setVisibility(View.GONE);
+        TextView pnel3 = (TextView)findViewById(R.id.tercerPanel);
+        pnel3.setVisibility(View.GONE);
+        TextView pnel4 = (TextView)findViewById(R.id.cuartoPanel);
+        pnel4.setVisibility(View.GONE);
+        TextView pnel5 = (TextView)findViewById(R.id.quintoPanel);
+        pnel5.setVisibility(View.GONE);
+        ImageView img2=(ImageView)findViewById(R.id.imgpanel2);
+        img2.setVisibility(View.GONE);
+        ImageView img3=(ImageView)findViewById(R.id.imgpanel3);
+        img3.setVisibility(View.GONE);
+        ImageView img4=(ImageView)findViewById(R.id.imgpanel4);
+        img4.setVisibility(View.GONE);
+        ImageView img5=(ImageView)findViewById(R.id.imgpanel5);
+        img5.setVisibility(View.GONE);
+    }
     public void enviarInformacion(View view) {
         // Obtener el texto del TextView
         TextView textView = (TextView) findViewById(R.id.primerPanel);
