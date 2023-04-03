@@ -544,7 +544,46 @@ public class Activity_calc_panels extends AppCompatActivity {
         intent.putExtra("textSeleccionado", informacion);
         startActivity(intent);
     }
+    public void enviarInformacion2(View view) {
+        // Obtener el texto del TextView
+        TextView textView = (TextView) findViewById(R.id.segundoPanel);
+        String informacion = textView.getText().toString();
 
+        // Crear un Intent para pasar la información a la siguiente actividad
+        Intent intent = new Intent(this, Activity_compra.class);
+        intent.putExtra("textSeleccionado", informacion);
+        startActivity(intent);
+    }
+    public void enviarInformacion3(View view) {
+        // Obtener el texto del TextView
+        TextView textView = (TextView) findViewById(R.id.tercerPanel);
+        String informacion = textView.getText().toString();
+
+        // Crear un Intent para pasar la información a la siguiente actividad
+        Intent intent = new Intent(this, Activity_compra.class);
+        intent.putExtra("textSeleccionado", informacion);
+        startActivity(intent);
+    }
+    public void enviarInformacion4(View view) {
+        // Obtener el texto del TextView
+        TextView textView = (TextView) findViewById(R.id.cuartoPanel);
+        String informacion = textView.getText().toString();
+
+        // Crear un Intent para pasar la información a la siguiente actividad
+        Intent intent = new Intent(this, Activity_compra.class);
+        intent.putExtra("textSeleccionado", informacion);
+        startActivity(intent);
+    }
+    public void enviarInformacion5(View view) {
+        // Obtener el texto del TextView
+        TextView textView = (TextView) findViewById(R.id.quintoPanel);
+        String informacion = textView.getText().toString();
+
+        // Crear un Intent para pasar la información a la siguiente actividad
+        Intent intent = new Intent(this, Activity_compra.class);
+        intent.putExtra("textSeleccionado", informacion);
+        startActivity(intent);
+    }
 
 
 }

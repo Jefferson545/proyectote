@@ -75,6 +75,6 @@ public class Activity_compra extends AppCompatActivity {
         dialog.show();
 
 
-    
+
     }
 }
