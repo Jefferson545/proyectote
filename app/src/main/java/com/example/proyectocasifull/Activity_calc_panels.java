@@ -2,9 +2,7 @@ package com.example.proyectocasifull;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -15,29 +13,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.app.AlertDialog;
-import android.app.ProgressDialog;
 
 public class Activity_calc_panels extends AppCompatActivity {
 
     Bundle bundle;
     TextView verm;
     boolean mostrarPaneles = true;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AlertDialog.Builder builder = new AlertDialog.Builder(Activity_calc_panels.this);
-        builder.setMessage("Para comprar un panel tocar el nombre o la imagen.");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // Cierra el cuadro de diálog
-                dialog.dismiss();
-            }
-        });
-        builder.setCancelable(false); // Evita que el usuario cierre el diálogo al presionar fuera de él
-        AlertDialog dialog = builder.create();
-        dialog.show();
 
         setContentView(R.layout.activity_calc_panels);
         ///Extrae el dato calculado de la otra activity
@@ -552,7 +536,6 @@ public class Activity_calc_panels extends AppCompatActivity {
 
     public void enviarInformacion(View view) {
         // Obtener el texto del TextView
-
         TextView textView = (TextView) findViewById(R.id.primerPanel);
         String informacion = textView.getText().toString();
 
@@ -561,52 +544,6 @@ public class Activity_calc_panels extends AppCompatActivity {
         intent.putExtra("textSeleccionado", informacion);
         startActivity(intent);
     }
-    public void enviarInformacion2(View view) {
-        // Obtener el texto del TextView
-
-        TextView textView = (TextView) findViewById(R.id.segundoPanel);
-        String informacion = textView.getText().toString();
-
-        // Crear un Intent para pasar la información a la siguiente actividad
-        Intent intent = new Intent(this, Activity_compra.class);
-        intent.putExtra("textSeleccionado", informacion);
-        startActivity(intent);
-    }
-    public void enviarInformacion3(View view) {
-        // Obtener el texto del TextView
-
-        TextView textView = (TextView) findViewById(R.id.tercerPanel);
-        String informacion = textView.getText().toString();
-
-        // Crear un Intent para pasar la información a la siguiente actividad
-        Intent intent = new Intent(this, Activity_compra.class);
-        intent.putExtra("textSeleccionado", informacion);
-        startActivity(intent);
-    }
-    public void enviarInformacion4(View view) {
-        // Obtener el texto del TextView
-
-        TextView textView = (TextView) findViewById(R.id.cuartoPanel);
-        String informacion = textView.getText().toString();
-
-        // Crear un Intent para pasar la información a la siguiente actividad
-        Intent intent = new Intent(this, Activity_compra.class);
-        intent.putExtra("textSeleccionado", informacion);
-        startActivity(intent);
-    }
-    public void enviarInformacion5(View view) {
-        // Obtener el texto del TextView
-
-        TextView textView = (TextView) findViewById(R.id.quintoPanel);
-        String informacion = textView.getText().toString();
-
-        // Crear un Intent para pasar la información a la siguiente actividad
-        Intent intent = new Intent(this, Activity_compra.class);
-        intent.putExtra("textSeleccionado", informacion);
-        startActivity(intent);
-    }
-
-
 
 
 
